@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -13,7 +12,8 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         <style>
             body {
-                background-color:black;                color: #fff;
+                background-color:black;
+                color: #fff;
                 font-family: Arial, sans-serif;
             }
 
@@ -74,6 +74,105 @@
                 padding: 20px;
                 text-align: center;
             }
+
+            /* Additional styles for the contact section */
+            #contact {
+                background-color: #333;
+                color: #fff;
+                padding: 50px 20px;
+            }
+
+            #contact label {
+                display: block;
+                margin-bottom: 10px;
+            }
+
+            #contact input,
+            #contact textarea {
+                width: 100%;
+                padding: 10px;
+                border: none;
+                border-radius: 5px;
+                margin-bottom: 20px;
+            }
+
+            #contact input[type="submit"] {
+                background-color: rgb(225, 92, 127);
+                color: #fff;
+                cursor: pointer;
+            }
+
+            #contact input[type="submit"]:hover {
+                background-color: #fff;
+                color: rgb(225, 92, 127);
+            }
+
+            /* Additional styles for the projects section */
+            #projects {
+                background-color: #333;
+                color: #fff;
+                padding: 50px 20px;
+            }
+
+            .carousel-item {
+                text-align: center;
+            }
+
+            .carousel-item h2 {
+                margin-bottom: 20px;
+            }
+
+            .carousel-item p {
+                margin-bottom: 40px;
+            }
+
+            .carousel-control-prev,
+            .carousel-control-next {
+                width: 5%;
+            }
+
+            .carousel-control-prev-icon,
+            .carousel-control-next-icon {
+                background-color: rgb(225, 92, 127);
+                height: 50px;
+                width: 50px;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .carousel-control-prev-icon::before,
+            .carousel-control-next-icon::before {
+                content: '';
+                display: inline-block;
+                border-top: 15px solid transparent;
+                border-bottom: 15px solid transparent;
+            }
+
+            .carousel-control-prev-icon::after,
+            .carousel-control-next-icon::after {
+                content: '';
+                display: inline-block;
+                border-top: 15px solid #fff;
+                border-bottom: 15px solid #fff;
+            }
+
+            .carousel-indicators {
+                bottom: -50px;
+            }
+
+            .carousel-indicators li {
+                background-color: #fff;
+                border-radius: 50%;
+                width: 10px;
+                height: 10px;
+                margin: 0 10px;
+            }
+
+            .carousel-indicators .active {
+                background-color: rgb(225, 92, 127);
+            }
         </style>
     </head>
     <body>
@@ -116,6 +215,7 @@
                             [Project Description]. Technologies used: [Technology 1],
                             [Technology 2], [Technology 3].
                         </p>
+                        <a href="#" class="btn btn-primary">View Project</a>
                     </div>
                     <div class="carousel-item">
                         <h2>Project 2</h2>
@@ -123,6 +223,7 @@
                             [Project Description]. Technologies used: [Technology 1],
                             [Technology 2], [Technology 3].
                         </p>
+                        <a href="#" class="btn btn-primary">View Project</a>
                     </div>
                     <div class="carousel-item">
                         <h2>Project 3</h2>
@@ -130,6 +231,7 @@
                             [Project Description]. Technologies used: [Technology 1],
                             [Technology 2], [Technology 3].
                         </p>
+                        <a href="#" class="btn btn-primary">View Project</a>
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
