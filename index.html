@@ -1,1 +1,206 @@
-<p> hello world</p>
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Prompt Engineer Portfolio</title>
+        <!-- Add these links to the head section of your HTML file -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <style>
+            body {
+                background-color:black;                color: #fff;
+                font-family: Arial, sans-serif;
+            }
+
+            header {
+                background-color: rgba(0, 0, 255,0.233);
+                padding: 20px;
+            }
+
+            nav ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+
+            nav li {
+                display: inline-block;
+                margin-right: 20px;
+            }
+
+            nav a {
+                color: #fff;
+                text-decoration: none;
+                font-size: 18px;
+            }
+
+            main {
+                padding: 20px;
+            }
+
+            h1,
+            h2 {
+                color:rgb(225, 92, 127);
+            }
+            
+            ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+            
+            li {
+                margin-bottom: 20px;
+            }
+
+            footer {
+                background-color: #0077c2;
+                color: #fff;
+                padding: 20px;
+                text-align: center;
+            }
+            h2 {
+                color:rgb(225, 92, 127);
+            }
+        
+            footer {
+                background-color: #0077c2;
+                color: #fff;
+                padding: 20px;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section id="about">
+                <h1>About Me</h1>
+                <p>
+                    Hi, I'm [Your Name], a software engineer with [Number of Years]
+                    years of experience in [Programming Languages and Technologies].
+                </p>
+                <p>
+                    I have worked on a variety of projects, including [Project 1],
+                    [Project 2], and [Project 3]. My areas of expertise include [Area 1],
+                    [Area 2], and [Area 3].
+                </p>
+            </section>
+
+        <section id="projects">
+            <h1>Projects</h1>
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <h2>Project 1</h2>
+                        <p>
+                            [Project Description]. Technologies used: [Technology 1],
+                            [Technology 2], [Technology 3].
+                        </p>
+                    </div>
+                    <div class="carousel-item">
+                        <h2>Project 2</h2>
+                        <p>
+                            [Project Description]. Technologies used: [Technology 1],
+                            [Technology 2], [Technology 3].
+                        </p>
+                    </div>
+                    <div class="carousel-item">
+                        <h2>Project 3</h2>
+                        <p>
+                            [Project Description]. Technologies used: [Technology 1],
+                            [Technology 2], [Technology 3].
+                        </p>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h1>Contact Me</h1>
+            <form action="submit-form.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required />
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required />
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <input type="submit" value="Send" />
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2021 Prompt Engineer</p>
+    </footer>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+
+</html>
